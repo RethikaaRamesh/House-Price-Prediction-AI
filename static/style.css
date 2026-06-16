@@ -1,0 +1,311 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Dashboard */
+
+.dashboard{
+    width:95%;
+    max-width:1400px;
+    margin:30px auto;
+}
+
+.dashboard h1{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+/* Stats */
+
+.stats{
+    display:grid;
+
+    grid-template-columns:
+    repeat(6,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+}
+
+
+
+.stat-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.stat-card h3{
+    color:#94a3b8;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#38bdf8;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.stat-card h2{
+    color:#38bdf8;
+    font-size:38px;
+    font-weight:700;
+}
+
+.stat-card:nth-child(5) h2{
+    color:#22c55e;   /* R² Score */
+}
+
+.stat-card:nth-child(6) h2{
+    color:#f59e0b;   /* RMSE */
+}
+/* Charts */
+
+.chart-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:25px;
+}
+
+.chart-card{
+    background:#1e293b;
+    border-radius:20px;
+    padding:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.chart-card .plotly-graph-div{
+    width:100% !important;
+}
+
+/* Button */
+
+/* Predict Button */
+
+button[type="submit"]{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+
+    transition:all .3s ease;
+}
+
+button[type="submit"]:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 8px 20px rgba(37,99,235,.4);
+}
+
+.top-buttons{
+    text-align:right;
+    margin-bottom:20px;
+}
+
+.nav-btn{
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    font-weight:600;
+}
+
+/* Dashboard Button */
+
+.dashboard-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #7c3aed,
+        #ec4899
+    );
+
+    transition:all .3s ease;
+}
+
+.dashboard-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 8px 20px rgba(236,72,153,.4);
+}
+
+.container{
+
+    width:650px;
+
+    margin:60px auto;
+
+    padding:40px;
+
+    background:#111827;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.4);
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+}
+
+.result{
+
+    margin-top:20px;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #16a34a,
+        #22c55e
+    );
+
+    box-shadow:
+    0 6px 15px rgba(34,197,94,.3);
+}
+
+.container h1{
+
+    text-align:center;
+
+    color:#38bdf8;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+}
+
+.back-btn{
+
+    width:300px;
+
+    display:block;
+
+    margin:30px auto;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #f59e0b,
+        #ef4444
+    );
+
+    transition:all .3s ease;
+}
+
+.back-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(239,68,68,.4);
+}
+
+.hero-text{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.hero-text p{
+    color:#94a3b8;
+    font-size:18px;
+    line-height:1.6;
+}
+

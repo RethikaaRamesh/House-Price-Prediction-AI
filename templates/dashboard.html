@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI House Analytics</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <h1>🏠 AI-Powered House Price Analytics</h1>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>Total Houses</h3>
+            <p>{{ total_houses }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Average Price</h3>
+            <p>${{ avg_price }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Maximum Price</h3>
+            <p>${{ max_price }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Avg Quality</h3>
+            <p>{{ avg_quality }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>R² Score</h3>
+            <h2>{{ r2_score_value }}</h2>
+        </div>
+
+        <div class="stat-card">
+            <h3>RMSE</h3>
+            <h2>${{ rmse_score_value }}</h2>
+        </div>
+
+    </div>
+
+    <div class="chart-grid">
+
+        <div class="chart-card">
+            {{ price_chart|safe }}
+        </div>
+
+        <div class="chart-card">
+            {{ scatter_chart|safe }}
+        </div>
+
+    </div>
+
+    <div class="chart-card">
+        {{ heatmap|safe }}
+    </div>
+
+    <div class="chart-card">
+        {{ actual_vs_predicted|safe }}
+    </div>
+
+    <div class="chart-card">
+        {{ feature_importance_chart|safe }}
+    </div>
+
+    <a href="/">
+        <button class="back-btn">
+            🏠 Back To Prediction
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>
